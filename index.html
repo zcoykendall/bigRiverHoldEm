@@ -60,12 +60,12 @@
 
         <div class="player-hand">
             <div class="card hand-card-1">
-                <div class="card-number">7</div>
-                <div class="card-suit">&spades;</div>
+                <div id="hand-card-1-value" class="card-number">7</div>
+                <div id="hand-card-1-suit" class="card-suit">&spades;</div>
             </div>
             <div class="card hand-card-2">
-                <div class="card-number">7</div>
-                <div class="card-suit">&hearts;</div>
+                <div id="hand-card-2-value" class="card-number">7</div>
+                <div id="hand-card-2-suit" class="card-suit">&hearts;</div>
             </div>
         </div>
 
@@ -124,13 +124,13 @@
             })
           }
 
-          toBeCalledForEachSuit("spades")
+          toBeCalledForEachSuit("&spades;")
 
-          toBeCalledForEachSuit("hearts")
+          toBeCalledForEachSuit("&hearts;")
 
-          toBeCalledForEachSuit("diamonds")
+          toBeCalledForEachSuit("&clubs;")
 
-          toBeCalledForEachSuit("clubs")
+          toBeCalledForEachSuit("&diams;")
 
           shuffle(deck);
 
@@ -148,6 +148,18 @@
 
         // define reference to the cashola element
         var cashola = document.getElementById("cashola");
+
+        // define reference to the card1 value element
+        var card1Value = document.getElementById("hand-card-1-value");
+
+        // define reference to the card1 suit element
+        var card1Suit = document.getElementById("hand-card-1-suit");
+
+        // define reference to the card2 value element
+        var card2Value = document.getElementById("hand-card-2-value");
+
+        // define reference to the card2 suit element
+        var card2Suit = document.getElementById("hand-card-2-suit");
 
         // function to generate random deck index
         function generateRandomIndex(){
@@ -172,6 +184,18 @@
 
             console.log ("Card 2 suit is: " +
                 card2.suit + " and value is: " + card2.value)
+
+            // update the card1Suit accordingly
+            card1Suit.innerHTML = card1.suit
+
+            // update the card1Value accordingly
+            card1Value.innerHTML = card1.value
+
+            // update the card1Suit accordingly
+            card2Suit.innerHTML = card2.suit
+
+            // update the card2Value accordingly
+            card2Value.innerHTML = card2.value
 
             if (submitCount < 7) {
                 console.log("submit button clicked " + submitCount + " times");
