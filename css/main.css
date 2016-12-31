@@ -1,0 +1,207 @@
+
+.main-container {
+    width: 1000px;
+    margin: auto;
+    color: #9ba7ab;
+    position: relative;
+    ;
+}
+
+.title {
+    position: relative;
+    font-family: 'Bungee Shade', sans-serif;
+    font-size: 6em;
+    color: #9ba7ab;
+    margin: 4% 10px;
+}
+
+.lives, .take {
+    position: absolute;
+    height: 50px;
+    width: 125px;
+    right: 25px;
+}
+
+.lives {
+    top: 15px;
+    /* options for heart color */
+    color: #fcecc2;
+    color: #addfec;
+    color: #f9c7c7;
+}
+
+.take {
+    top: 65px;
+    color: #9ccfd1;
+}
+
+.life {
+    float: left;
+    font-size: 2.4em;
+    margin: 0 5px;
+}
+
+.cashola {
+    float: right;
+    font-size: 2em;
+    margin: 0 5px;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.life-3 {
+    color: #eee;
+}
+
+.card {
+    width: 105px;
+    height: 110px;
+    margin: 5px;
+    border: 3px solid #9ba7ab;
+    background: #fff;
+    font-family: 'Anonymous Pro', monospace;
+    text-align: center;
+    padding: 15px 0;
+    float: left;
+}
+
+.opponents-box {
+    width: 360px;
+    height: 110px;
+    margin: 8px;
+    text-align: center;
+    padding: 15px 0;
+    float: left;
+}
+
+.card-number, .card-suit {
+    font-size: 3em;
+}
+
+.community-section {
+    overflow: auto;
+    margin: 20px 0;
+    /*width: 100%*/
+}
+
+.player-hand {
+    margin-left: 150px;
+}
+
+.player-hand .card {
+    padding-top: 25px;
+    width: 170px;
+    height: 180px;
+    font-size: 1.6em;
+    border-color: #94c2ba;
+    color: #94c2ba;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #c5d7dd;
+    margin: .3em 0;
+    padding: 0;
+}
+
+.controller {
+    width: 325px;
+    height: 180px;
+    margin: 25px 0;
+    /*background: #c5d7dd;*/
+    color: #abbbc1;
+    /*border: 3px solid #c5d7dd;*/
+    text-align: center;
+    /*padding: 10px;*/
+    float: left;
+}
+
+.opponents-title {
+    font-size: .9em;
+    margin: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Anonymous Pro', monospace;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.opponents-count {
+    /*font-weight: 700;*/
+    font-size: 1.3em;
+    color: #caabe9;
+}
+
+.guesser {
+    font-family: 'Anonymous Pro', monospace;
+    color: #5c6367;
+    /*color: #9ba7ab;*/
+    padding: 5px 20px;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.guesser .mark input {
+    color: #5c6367;
+    font-size: 1em;
+    width: 45px;
+    text-align: right;
+    font-family: 'Anonymous Pro', monospace;
+    border: solid 2px #5c6367;
+    padding: 5px;
+    margin-right: -7px;
+    margin-bottom: 0;
+}
+
+.actual, .difference {
+    color: #ccc;
+}
+
+.guesser .stat {
+    margin: 12px 0;
+}
+
+.action-button a {
+    display: block;
+    margin: 20px 0;
+}
+
+.action-button a:visited {
+    color: #6a9eec;
+}
+
+.action-button a:active {
+    color: #7078e4;
+}
+
+.squiggles {
+    margin-top: 0px;
+    width: 360px;
+    position: relative;
+}
+
+.squig1 {
+    display: block;
+    color: #c6e6e7;
+    font-size: 3.5em;
+    margin: 0;
+    position: absolute;
+    right: 30px;
+}
+
+.squig2 {
+    position: absolute;
+    font-size: 2em;
+    color: #dcf4f5;
+    margin: 0;
+    right: 10px;
+}
+
+.squig3 {
+    position: absolute;
+    font-size: 2.7em;
+    color: #9ccfd1;
+    margin: 0;
+    right: 0;
+}

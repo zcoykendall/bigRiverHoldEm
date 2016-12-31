@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Big River</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|VT323|Anonymous+Pro" rel="stylesheet">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <h1 class="title">Big River</h1>
+        <div class="lives">
+            <div class="life life-1"><i class="ion-heart"></i></div>
+            <div class="life life-2"><i class="ion-heart"></i></div>
+            <div class="life life-3"><i class="ion-heart"></i></div>
+        </div>
+        <div class="take">
+            <div id="cashola" class="cashola">$ 0</div>
+        </div>
+
+        <div class="community-section">
+            <div class="opponents-box">
+                <hr>
+                <h5 class="opponents-title">
+                    Winning Probability against <span class="opponents-count">3</span> opponents</h5>
+                <hr>
+                <div class="op active"></div>
+                <div class="squiggles">
+                    <p class="squig1">~ ~~ ~~~~~~</p>
+                    <p class="squig2">~~ ~ ~ ~~ ~~~~~ ~~~ ~ ~</p>
+                    <p class="squig3">~~ ~~~~~ ~~ ~~~</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-number">6</div>
+                <div class="card-suit">&hearts;</div>
+            </div>
+            <div class="card">
+                <div class="card-number">Q</div>
+                <div class="card-suit">&spades;</div>
+            </div>
+            <div class="card">
+                <div class="card-number">2</div>
+                <div class="card-suit">&hearts;</div>
+            </div>
+            <div class="card">
+                <div class="card-number">K</div>
+                <div class="card-suit">&clubs;</div>
+            </div>
+            <div class="card">
+                <div class="card-number">Q</div>
+                <div class="card-suit">&diams;</div>
+            </div>
+        </div>
+
+        <div class="player-hand">
+            <div class="card hand-card-1">
+                <div class="card-number">7</div>
+                <div class="card-suit">&spades;</div>
+            </div>
+            <div class="card hand-card-2">
+                <div class="card-number">7</div>
+                <div class="card-suit">&hearts;</div>
+            </div>
+        </div>
+
+        <div class="controller">
+
+            <div class="guesser">
+                <div class="stat mark">Mark: <input type="text" name="guess" value="0.50"></div>
+                <div class="stat actual">Actual: &nbsp; &nbsp;??</div>
+                <div class="stat difference">Difference: &nbsp; &nbsp;??</div>
+                <div class="action-button"><a id="submit-button" href="#">Submit</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var submitCount = 0;
+
+        // define reference to the submit-button
+        var submitButton = document.getElementById("submit-button");
+
+        // define reference to the cashola element
+        var cashola = document.getElementById("cashola");
+
+        // everytime the submit button is clicked
+        submitButton.addEventListener('click', function() {
+
+            // increment the submitCount
+            submitCount = submitCount + 1;
+
+            if (submitCount < 7) {
+                console.log("submit button clicked " + submitCount + " times");
+            } else {
+                console.warn("fuck you zac")
+            }
+
+            // update the cashola accordingly
+            cashola.innerHTML = "$ " + (submitCount * 10);
+        });
+    </script>
+
+</body>
+
+</html>
